@@ -1,11 +1,11 @@
 helmCharts:
-  - name: ../charts/elasticsearch
+  - name: elasticsearch
     releaseName: elasticsearch
     namespace: efk-stack
     valuesFile: ./elasticsearch-values.yaml
-  - name: ../charts/kibana
+  - name: kibana
     releaseName: kibana
     namespace: efk-stack
-  - name: ../charts/fluent-bit
+  - name: fluent-bit
     releaseName: fluent-bit
     namespace: efk-stack
