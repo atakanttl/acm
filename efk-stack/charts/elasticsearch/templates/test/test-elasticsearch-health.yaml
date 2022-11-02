@@ -8,6 +8,7 @@ metadata:
 {{- else }}
   name: "{{ .Release.Name }}-{{ randAlpha 5 | lower }}-test"
 {{- end }}
+  namespace: {{ .Release.Namespace | quote }}
   annotations:
     "helm.sh/hook": test
     "helm.sh/hook-delete-policy": hook-succeeded
