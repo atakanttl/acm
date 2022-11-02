@@ -1,2 +1,2 @@
 resources:
-  - efk-stack
+  - cert-manager
