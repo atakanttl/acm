@@ -15,5 +15,3 @@ helmCharts:
     version: "0.20.10"
     releaseName: fluent-bit
     namespace: testns
-resources:
-  - "namespace.yaml"
