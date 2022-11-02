@@ -1,17 +1,11 @@
 helmCharts:
-  - name: elasticsearch
-    repo: https://helm.elastic.co
-    version: "7.17.3"
+  - name: ../charts/elasticsearch
     releaseName: elasticsearch
     namespace: efk-stack
     valuesFile: ./elasticsearch-values.yaml
-  - name: kibana
-    repo: https://helm.elastic.co
-    version: "7.17.3"
+  - name: ../charts/kibana
     releaseName: kibana
     namespace: efk-stack
-  - name: fluent-bit
-    repo: https://fluent.github.io/helm-charts
-    version: "0.20.10"
+  - name: ../charts/fluent-bit
     releaseName: fluent-bit
     namespace: efk-stack
