@@ -12,6 +12,6 @@ helmCharts:
     namespace: efk-stack
   - name: fluent
     repo: https://fluent.github.io/helm-charts
-    version: "7.17.3"
+    version: "0.20.10"
     releaseName: fluent
     namespace: efk-stack
