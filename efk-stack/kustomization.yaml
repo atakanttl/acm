@@ -3,15 +3,17 @@ helmCharts:
     repo: https://helm.elastic.co
     version: "7.17.3"
     releaseName: elasticsearch
-    namespace: efk-stack
+    namespace: testns
     valuesFile: ./elasticsearch-values.yaml
   - name: kibana
     repo: https://helm.elastic.co
     version: "7.17.3"
     releaseName: kibana
-    namespace: efk-stack
+    namespace: testns
   - name: fluent-bit
     repo: https://fluent.github.io/helm-charts
     version: "0.20.10"
     releaseName: fluent-bit
-    namespace: efk-stack
+    namespace: testns
+resources:
+  - "namespace.yaml"
