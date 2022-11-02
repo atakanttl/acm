@@ -10,8 +10,8 @@ helmCharts:
     version: "7.17.3"
     releaseName: kibana
     namespace: efk-stack
-  - name: fluent
+  - name: fluent-bit
     repo: https://fluent.github.io/helm-charts
     version: "0.20.10"
-    releaseName: fluent
+    releaseName: fluent-bit
     namespace: efk-stack
