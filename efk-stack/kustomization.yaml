@@ -1,5 +1,5 @@
 helmCharts:
-  - name: elastic
+  - name: elasticsearch
     repo: https://helm.elastic.co
     version: "7.17.3"
     releaseName: elasticsearch
